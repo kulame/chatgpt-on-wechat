@@ -15,6 +15,8 @@ if __name__ == '__main__':
 
         # startup channel
         channel.startup()
+        logger.info("[INIT] channel finished: {}".format(channel))
     except Exception as e:
+        logger.info("[INIT] channel failed: {}".format(e))
         logger.error("App startup failed!")
         logger.exception(e)
